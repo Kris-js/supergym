@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: tomato;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 30px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  svg {
+    width: 144px;
+    height: 44px;
+
+    @include vp-1199 {
+      width: 82px;
+      height: 17px;
+    }
+
+    @include vp-767 {
+      width: 69px;
+      height: 24px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+    }
+  }
+}
