@@ -8,15 +8,15 @@
   <meta name="description" content="Тренажерный зал, групповые занятия, кардио зона">
   <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="./fonts/alumni-sans-v16-latin-600.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="./fonts/alumni-sans-v16-latin-regular.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="./fonts/roboto-condensed-v25-latin-300.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="./fonts/roboto-condensed-v25-latin-700.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="./fonts/roboto-condensed-v25-latin-regular.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
 </head>
 
@@ -39,44 +39,45 @@
 
     </section>
   </main>
+
   <footer>
     <div class="footer">
-      <a>
-        <svg width="88" height="32">
-          <use href="./img/sprite.svg#logotype"></use>
-        </svg>
+      <a class="footer__logo" href="index.html" aria-label="Логотип спортзала Supergym">
+        <picture>
+          <source media="(min-width:1200px)" srcset="./img/sprite/logotype.svg" width="88" height="32">
+          <source media="(min-width:768px)" srcset="./img/sprite/logotype.svg" width="82" height="18">
+          <img src="./img/sprite/logotype.svg" alt="" width="68" height="15">
+        </picture>
       </a>
-
         <ul class="footer__list">
-          <li>
-            <a>
+          <li class="footer__list-item">
+            <a class="footer__list-link">
               Услуги
             </a>
           </li>
-          <li>
-            <a>
+          <li class="footer__list-item">
+            <a class="footer__list-link">
               Абонементы
             </a>
           </li>
-          <li>
-            <a>
+          <li class="footer__list-item">
+            <a class="footer__list-link">
               Акции
             </a>
           </li>
-          <li>
-            <a>
+          <li class="footer__list-item">
+            <a class="footer__list-link">
               Тренеры
             </a>
           </li>
-          <li>
-            <a>
+          <li class="footer__list-item">
+            <a class="footer__list-link">
               Расписание
             </a>
           </li>
         </ul>
-
         <ul class="footer__social">
-          <li>
+          <li class="footer__social-item">
             <a href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg width="25" height="25">
@@ -84,15 +85,15 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="footer__social-item">
             <a href="#">
               <span class="visually-hidden">Мы в Однокласcниках</span>
               <svg width="25" height="25">
-                <use href="./img/sprite.svg#odnoklassniki"></use>
+                <use href="./img/sprite.svg#ok"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="footer__social-item">
             <a href="#">
               <span class="visually-hidden">Мы в Реддит</span>
               <svg  width="25" height="25">
@@ -104,7 +105,6 @@
 
     </div>
   </footer>
-  </div>
   </div>
 
 
