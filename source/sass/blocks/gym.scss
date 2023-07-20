@@ -1,0 +1,79 @@
+.gym {
+  position: relative;
+  display: flex;
+  column-gap: 65px;
+  padding-left: 163px;
+  padding-right: 103px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+
+  p {
+    font-family: $ff-RobotoCondensed;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.gym__description {
+  font-family: $ff-RobotoCondensed;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.gym__inner {
+  max-width: 355px;
+}
+
+.gym__title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  margin-top: 49px;
+  margin-bottom: 25px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 364px;
+  height: 228px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 167px;
+  }
+}

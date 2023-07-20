@@ -1,11 +1,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: tomato;
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 30px;
-  color: $color-default-white;
+  bottom: 0;
 
   @include vp-1199 {
     padding-left: 45px;
@@ -18,7 +17,7 @@
   }
 
   svg {
-    width: 144px;
+    width: 122px;
     height: 44px;
 
     @include vp-1199 {

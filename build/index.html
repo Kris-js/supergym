@@ -8,70 +8,106 @@
   <meta name="description" content="Тренажерный зал, групповые занятия, кардио зона">
   <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="header">
-        <a>
-          <svg width="122" height="44">
-            <use href="./img/sprite.svg#logotype"></use>
-          </svg>
-        </a>
-        <p>8-800-555-55-55</p>
+    <div class="wrapper__background">
+      <header>
+        <div class="header">
+          <a>
+            <svg width="122" height="44">
+              <use href="./img/sprite.svg#logotype"></use>
+            </svg>
+          </a>
+          <p>8-800-555-55-55</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__wrapper container">
+            <span class="hero__span">Омск</span>
+            <h1 class="hero_title">Фитнес Центр</h1>
+            <p class="hero__text">Тренажёрный зал
+              Групповые занятия
+              Кардио-зона </p>
+            <button class="hero__button button"> Купить абонемент</button>
+            <div class="hero__image">
+              <picture>
+                <source media="(max-width:768px)" srcset="./img/hero-tablet.png" width="324" height="390">
+                <img src="./img/hero.png" alt="" width="500" height="556">
+              </picture>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <section class="gym">
+      <div class="gym__inner">
+        <h1 class="gym__title">Тренажерный зал</h1>
+        <span class="gym__description">Просторный зал площадью 900 кв/м</span>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+          зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p class="gym__description-none"> В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+          Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
       </div>
-    </header>
-  </div>
-
-  <main>
-    <section class=" intro">
-
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer">
-      <a class="footer__logo" href="index.html" aria-label="Логотип спортзала Supergym">
+      <div class="gym__image">
         <picture>
-          <source media="(min-width:1200px)" srcset="./img/sprite/logotype.svg" width="88" height="32">
-          <source media="(min-width:768px)" srcset="./img/sprite/logotype.svg" width="82" height="18">
-          <img src="./img/sprite/logotype.svg" alt="" width="68" height="15">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+          <source media="(min-width:1200px)" srcset="img/gym-desktop.png, img/gym-desktop@2x.png 2x">
+          <source media="(min-width:768px)" srcset="img/gym-tablet.png, img/gym-tablet@2x.png 2x">
+          <img src="img/gym-mobile.png" srcset="img/gym-mobile@2x.png 2x" alt="Фото зала">
         </picture>
-      </a>
+      </div>
+      <div class="gym__video">
+        <video controls class="gym__video-file" src="video/Бесплатные интерактивные онлайн-курсы.mp4"> </video>
+      </div>
+    </section>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <a class="footer__logo" href="index.html" aria-label="Логотип спортзала Supergym">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./img/sprite/logotype.svg" width="88" height="32">
+            <source media="(min-width:768px)" srcset="./img/sprite/logotype.svg" width="82" height="18">
+            <img src="./img/sprite/logotype.svg" alt="" width="68" height="15">
+          </picture>
+        </a>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a class="footer__list-link">
+            <a class="footer__list-link" href="">
               Услуги
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link">
+            <a class="footer__list-link" href="">
               Абонементы
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link">
+            <a class="footer__list-link" href="">
               Акции
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link">
+            <a class="footer__list-link" href="">
               Тренеры
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link">
+            <a class="footer__list-link" href="">
               Расписание
             </a>
           </li>
@@ -96,22 +132,21 @@
           <li class="footer__social-item">
             <a href="#">
               <span class="visually-hidden">Мы в Реддит</span>
-              <svg  width="25" height="25">
+              <svg width="25" height="25">
                 <use href="./img/sprite.svg#Reddit"></use>
               </svg>
             </a>
           </li>
         </ul>
+      </div>
+    </footer>
 
-    </div>
-  </footer>
+
+
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </div>
-
-
-
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
 </body>
 
 </html>
