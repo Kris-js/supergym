@@ -5,19 +5,27 @@
   padding-left: 163px;
   padding-right: 103px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 235px;
 
   @include vp-1199 {
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 100px;
+    padding-bottom: 183px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include vp-767 {
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
   }
 
   @include vp-767 {
     padding-left: 0;
     padding-right: 0;
   }
-
-
 
   p {
     font-family: $ff-RobotoCondensed;
@@ -26,6 +34,19 @@
     line-height: 24px;
     margin-top: 14px;
     margin-bottom: 0;
+
+    @include vp-1199 {
+      padding-left: 88px;
+      padding-right: 88px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: start;
+    }
   }
 }
 
@@ -39,6 +60,20 @@
 
 .gym__inner {
   max-width: 355px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 678px;
+  }
+
+  @include vp-767 {
+    min-width: 258px;
+    align-items: start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .gym__title {
@@ -61,8 +96,8 @@
 
 .gym__video {
   position: absolute;
-  bottom: 0;
-  right: 40px;
+  bottom: 19%;
+  left: 43%;
   width: 364px;
   height: 228px;
   margin: 0 auto;
@@ -70,10 +105,45 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
+    bottom: 12%;
+    left: 31%;
   }
 
   @include vp-767 {
+    position: static;
     width: 100%;
-    height: 167px;
+  }
+}
+
+.gym__description-none {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.gym__button {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include vp-1199 {
+    top: 25%;
+    left: 30%;
+  }
+
+  @include vp-767 {
+    top: 71px;
+    left: 32px;
+  }
+}
+
+.gym__image {
+  @include vp-767 {
+    margin-bottom: 40px;
   }
 }
