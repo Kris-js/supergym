@@ -1749,8 +1749,8 @@ button,
 }
 @media (max-width: 767px) {
   .gym__button {
-    top: 71px;
-    left: 32px;
+    top: 79%;
+    left: 30%;
   }
 }
 
@@ -1967,6 +1967,14 @@ button,
   }
 }
 
+.tabs__item:active {
+  -o-border-image: linear-gradient(#ed0233, #003eb7) 30;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#ed0233), to(#003eb7)) 30;
+     border-image: linear-gradient(#ed0233, #003eb7) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
 .tabs__title {
   margin-top: 0;
   margin-bottom: 22px;
@@ -1997,8 +2005,29 @@ button,
   }
 }
 
+.tabs__inner-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+}
+
 .tabs__price {
-  z-index: 10;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.tabs__price::after {
+  content: attr(data-text);
   position: relative;
   color: #103AAE;
   font-size: 60px;
@@ -2006,23 +2035,21 @@ button,
   line-height: 90px;
   margin-top: 0;
   margin-bottom: 59px;
+  z-index: 1;
 }
 
-.tabs__price-shadow {
+.tabs__price::before {
+  content: attr(data-text);
   position: absolute;
-  margin: 0;
-  bottom: 196px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   color: #E8E8E8;
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
   opacity: 0.4799999893;
-}
-@media (max-width: 1199px) {
-  .tabs__price-shadow {
-    bottom: 0;
-    left: 10px;
-  }
 }
 
 .tabs__button {
@@ -2039,6 +2066,10 @@ button,
   padding-right: 103px;
   padding-bottom: 120px;
   padding-left: 103px;
+  background-image: url("../../img/background-abonement.png");
+  background-position: right 32px bottom;
+  background-repeat: no-repeat;
+  background-size: 321px 384px;
 }
 @media (max-width: 1199px) {
   .subscription {
@@ -2076,6 +2107,210 @@ button,
   .subscription__title {
     font-size: 32px;
     letter-spacing: 0.96px;
+  }
+}
+
+.supergames {
+  padding-top: 120px;
+  padding-bottom: 106px;
+}
+@media (max-width: 1199px) {
+  .supergames {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.supergames__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ED0233;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .supergames__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.supergames__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr -webkit-max-content;
+  -ms-grid-columns: 1fr max-content;
+  grid-template-columns: 1fr -webkit-max-content;
+  grid-template-columns: 1fr max-content;
+  -ms-grid-rows: 1fr auto -webkit-max-content;
+  -ms-grid-rows: 1fr auto max-content;
+  grid-template-rows: 1fr auto -webkit-max-content;
+  grid-template-rows: 1fr auto max-content;
+  max-width: 500px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  padding-top: 85px;
+  padding-left: 78px;
+  padding-right: 98px;
+  padding-bottom: 87px;
+}
+@media (max-width: 1199px) {
+  .supergames__inner {
+    -ms-grid-columns: auto -webkit-min-content;
+    -ms-grid-columns: auto min-content;
+    grid-template-columns: auto -webkit-min-content;
+    grid-template-columns: auto min-content;
+    -ms-grid-rows: 1fr auto -webkit-max-content;
+    -ms-grid-rows: 1fr auto max-content;
+    grid-template-rows: 1fr auto -webkit-max-content;
+    grid-template-rows: 1fr auto max-content;
+    padding-top: 51px;
+    padding-right: 45px;
+    padding-bottom: 51px;
+    padding-left: 45px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .supergames__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+.supergames__title {
+  margin: 0;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .supergames__title {
+    font-size: 48px;
+    line-height: 96%;
+    letter-spacing: 1.44px;
+  }
+}
+
+.supergames__list {
+  margin: 0;
+}
+
+.supergames__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .supergames__text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+.supergames__button {
+  display: block;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  border: 4px solid #ffffff;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .supergames__button {
+    padding: 13px 0;
+    border: 2px solid #ffffff;
+  }
+}
+
+.supergames__list-item {
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.supergames__description-text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 7px;
+}
+@media (max-width: 1199px) {
+  .supergames__description-text {
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 0;
+  }
+}
+
+.supergames__description-statistics {
+  margin-left: 0;
+  font-size: 14px;
+  border-top: 1px solid #ffffff;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.supergames__big {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 1199px) {
+  .supergames__big {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.supergames__description-statistics--date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content 40px;
+  -ms-grid-columns: max-content 40px;
+  grid-template-columns: -webkit-max-content 40px;
+  grid-template-columns: max-content 40px;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+
+.supergames__image {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .supergames__image {
+    min-height: 292px;
   }
 }
 

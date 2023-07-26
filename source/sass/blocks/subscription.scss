@@ -4,6 +4,10 @@
   padding-right: 103px;
   padding-bottom: 120px;
   padding-left: 103px;
+  background-image: url("../../img/background-abonement.png");
+  background-position: right 32px bottom;
+  background-repeat: no-repeat;
+  background-size: 321px 384px;
 
   @include vp-1199 {
     padding-top: 100px;

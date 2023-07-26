@@ -149,6 +149,12 @@
   }
 }
 
+.tabs__item:active {
+  border-image: linear-gradient(#ed0233, #003eb7) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
 .tabs__title {
   margin-top: 0;
   margin-bottom: 22px;
@@ -176,8 +182,21 @@
   }
 }
 
+.tabs__inner-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+}
+
 .tabs__price {
-  z-index: 10;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.tabs__price::after {
+  content: attr(data-text);
   position: relative;
   color: $color-egyptian-blue;
   font-size: 60px;
@@ -185,22 +204,21 @@
   line-height: 90px;
   margin-top: 0;
   margin-bottom: 59px;
+  z-index: 1;
 }
 
-.tabs__price-shadow {
+.tabs__price::before {
+  content: attr(data-text);
   position: absolute;
-  margin: 0;
-  bottom: 196px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   color: $color-whisper;
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
   opacity: 0.47999998927116394;
-
-  @include vp-1199 {
-    bottom: 0;
-    left: 10px;
-  }
 }
 
 .tabs__button {
