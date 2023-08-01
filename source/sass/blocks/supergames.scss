@@ -88,6 +88,7 @@
   grid-column: 1/3;
   border: 4px solid $color-default-white;
   text-align: center;
+  cursor: pointer;
 
   @include vp-1199 {
     padding: 13px 0;
