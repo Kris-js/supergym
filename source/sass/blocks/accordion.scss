@@ -1,0 +1,58 @@
+.accordion__element {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(16, 38, 84, 0.20);
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include vp-1199 {
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 12px;
+      padding-right: 55px;
+    }
+  }
+
+  p {
+    padding-right: 175px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 16px;
+      padding-right: 0;
+    }
+  }
+}
+
+.accordion__element:last-child {
+  border-bottom: 1px solid rgba(16, 38, 84, 0.20);
+}
+
+.accordion__button {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: url(../img/sprite/faq-open.svg);
+  top: 15px;
+  right: 0;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+    top: 25px;
+  }
+}

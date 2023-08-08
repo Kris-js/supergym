@@ -1,0 +1,104 @@
+.faq {
+  background-color: $color-ghost-white;
+  color: $color-sapphire;
+}
+
+.faq__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.faq__inner {
+  display: flex;
+  column-gap: 40px;
+  font-family: $ff-RobotoCondensed;
+
+  @include vp-1199 {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  @include vp-1199 {
+    flex-direction: row;
+    column-gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  @include vp-767 {
+    column-gap: 8px;
+  }
+}
+
+.faq__control {
+  display: block;
+  padding: 18px 0;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+  background-color: $color-ghost-white;
+
+  @include vp-767 {
+    width: 141px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.faq__control:hover {
+  border: 1px solid var(--primary, #102654);
+}
+
+.faq__control:active {
+  background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+  border: none;
+}
+
+.faq__content {
+  min-width: 860px;
+
+  @include vp-1199 {
+    min-width: 678px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+  }
+}
