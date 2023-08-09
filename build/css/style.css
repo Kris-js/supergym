@@ -3203,7 +3203,7 @@ button,
   }
 }
 
-.review__wrapper {
+.review__swiper {
   background-color: #1C3374;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3232,6 +3232,109 @@ button,
 
 .review__swiper-button--next {
   right: 320px;
+}
+
+.free {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  padding-top: 56px;
+  padding-bottom: 70px;
+  padding-left: 103px;
+  padding-right: 170px;
+  background-color: #102654;
+  color: #ffffff;
+  width: 683px;
+}
+.form h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 1.62px;
+}
+.form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+.form form input {
+  border: none;
+  background-color: #102654;
+  color: #ffffff;
+  border-bottom: 1px solid #74819C;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  outline: none;
+}
+.form form input:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.form form input:active {
+  border: 1px solid #ffffff;
+}
+.form form input:disabled {
+  color: opacity 0.4;
+  border-bottom: opacity 0.3;
+}
+
+.form__button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+
+.contacts {
+  padding-top: 56px;
+  padding-bottom: 70px;
+  padding-left: 120px;
+  padding-right: 100px;
+  color: #102654;
+}
+.contacts h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 1.62px;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 100px;
+}
+
+.contacts__item {
+  width: 180px;
 }
 
 /* @mixin hover-focus {
