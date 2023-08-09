@@ -1,0 +1,66 @@
+.review {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+
+.review__title {
+  color: $color-sapphire;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.review__wrapper {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+  font-family: $ff-RobotoCondensed;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.review__slide {
+  position: relative;
+  width: 560px;
+}
+
+.review__swiper-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  color: #AFAFAF;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+}
+
+.review__swiper-button--prev {
+  left: 320px;
+}
+
+.review__swiper-button--next {
+  right: 320px;
+}
+
