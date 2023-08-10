@@ -4,7 +4,7 @@
   padding-right: 103px;
   padding-bottom: 120px;
   padding-left: 103px;
-  background-image: url("../../img/background-abonement.png");
+  background-image: url("../img/subscription-desktop.png");
   background-position: right 32px bottom;
   background-repeat: no-repeat;
   background-size: 321px 384px;
@@ -14,6 +14,7 @@
     padding-right: 163px;
     padding-bottom: 100px;
     padding-left: 163px;
+    background-image: url("../img/subscription-tablet.png");
   }
 
   @include vp-767 {
@@ -21,6 +22,7 @@
     padding-right: 15px;
     padding-top: 63px;
     padding-bottom: 70px;
+    background-image: none;
   }
 }
 

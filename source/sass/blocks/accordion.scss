@@ -13,6 +13,7 @@
 
     @include vp-1199 {
       line-height: 24px;
+      max-width: 540px;
     }
 
     @include vp-767 {
@@ -45,7 +46,7 @@
   position: absolute;
   width: 42px;
   height: 42px;
-  background: url(../img/sprite/faq-open.svg);
+  background: url(../img/sprite/accordion-open.svg);
   top: 15px;
   right: 0;
   cursor: pointer;
@@ -55,4 +56,16 @@
     height: 32px;
     top: 25px;
   }
+}
+
+.accordion__button:hover {
+  background: url(../img/sprite/accordion-open-hover.svg);
+}
+
+.accordion__element.is-active .accordion__button {
+  background: url(../img/sprite/accordion-close.svg);
+}
+
+.accordion__button:disabled {
+  background: url(../img/sprite/accordion-disabled.svg);
 }

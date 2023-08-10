@@ -579,12 +579,12 @@
           <li class="promotion__item">
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <a>подробнее</a>
+            <a class="promotion__item-link">подробнее</a>
           </li>
           <li class="promotion__item">
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <a>подробнее</a>
+            <a class="promotion__item-link">подробнее</a>
           </li>
         </ul>
       </div>
@@ -824,13 +824,13 @@
           </div>
         </div>
 
-        <div class="review__swiper-button rewiew__swiper-button--prev">
+        <div class="review__swiper-button review__swiper-button--prev">
           <span class="visually-hidden">Предыдущий слайд</span>
           <svg width="16" height="32">
             <use href="./img/sprite.svg#back"></use>
           </svg>
         </div>
-        <div class="review__swiper-button trainer__swiper-button--next">
+        <div class="review__swiper-button review__swiper-button--next">
           <span class="visually-hidden">Следующий слайд</span>
           <svg width="16" height="32">
             <use href="./img/sprite.svg#next"></use>
@@ -843,15 +843,19 @@
     <section class="free">
       <div class="free__form form">
         <h2>Бесплатное занятие</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__name">
+        <form action="https://echo.htmlacademy.ru/" method="get" data-form-validate>
+          <div class="form__name" data-validate-type="email" ,
+          data-message-base="Поле обязательно к заполнению" , data-required>
             <label>
               <input type="text" name="username" placeholder="Имя">
             </label>
           </div>
           <div class="form__phone">
             <label>
-              <input type="number" name="phone" placeholder="Телефон">
+              <input type="number" name="phone" placeholder="Телефон" data-validate-type="phone" ,
+                data-on-input-validate, data-message-base="Поле обязательно к заполнению" ,
+                data-message-extra="Проверьте корректность заполнения поля" ,
+                data-message-success="Поле заполнено верно" , data-required>
             </label>
           </div>
           <button class="form__button button">Отправить</button>
@@ -879,16 +883,8 @@
           </li>
         </ul>
       </div>
-
     </section>
-
-
-
     </main>
-
-
-
-
 
     <footer>
       <div class="footer">
@@ -928,7 +924,7 @@
         </ul>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a href="#">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg width="25" height="25">
                 <use href="./img/sprite.svg#vk"></use>
@@ -936,7 +932,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">Мы в Однокласcниках</span>
               <svg width="25" height="25">
                 <use href="./img/sprite.svg#ok"></use>
@@ -944,7 +940,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">Мы в Реддит</span>
               <svg width="25" height="25">
                 <use href="./img/sprite.svg#Reddit"></use>

@@ -56,6 +56,7 @@
   }
 }
 
+
 .footer__logo {
   display: block;
   margin: 0 auto;
@@ -97,4 +98,16 @@
     width: 100%;
     margin-bottom: 16px;
   }
+}
+
+.footer__list-item:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer__list-item:active {
+  border-bottom: none;
+}
+
+.footer__list-item:disabled {
+  opacity: 0.4;
 }

@@ -56,11 +56,11 @@
   @include vp-1199 {
     flex-direction: row;
     column-gap: 10px;
-    flex-wrap: wrap;
   }
 
   @include vp-767 {
     column-gap: 8px;
+    flex-wrap: wrap;
   }
 }
 
@@ -86,8 +86,9 @@
   border: 1px solid var(--primary, #102654);
 }
 
-.faq__control:active {
+.faq__control.is-active {
   background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+  color: $color-default-white;
   border: none;
 }
 

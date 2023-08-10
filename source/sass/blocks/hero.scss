@@ -81,8 +81,26 @@
 .hero__button {
   grid-column: 2/3;
   height: 57px;
+  padding-top: 22px;
+  outline: none;
 
   @include vp-767 {
     grid-column: 1/3;
   }
+}
+
+.hero__button:hover {
+  background-color: $color-default-white;
+  color: $color-egyptian-blue;
+}
+
+.hero__button:active {
+  color: $color-sapphire;
+  background-color: $color-default-white;
+}
+
+.hero__button:disabled {
+  background-color: transparent;
+  color: opacity(0.5);
+  border: 4px solid rgba(255, 255, 255, 0.5);;
 }

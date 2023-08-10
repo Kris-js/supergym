@@ -1,9 +1,19 @@
 .contacts {
+  position: relative;
   padding-top: 56px;
   padding-bottom: 70px;
   padding-left: 120px;
   padding-right: 100px;
   color: $color-sapphire;
+  width: 683px;
+  border-top: 1px solid rgba(116, 129, 156, 1);
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   h2 {
     margin-top: 0;
@@ -12,19 +22,75 @@
     font-weight: 800;
     line-height: 84px;
     letter-spacing: 1.62px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 1.26px;
+    }
   }
 }
 
 .contacts__list {
+  position: relative;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 100px;
+  column-gap: 100px;
+  row-gap: 20px;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.contacts__list::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 45%;
+  width: 1px;
+  height: 102px;
+  background-color: $color-light-slate-grey;
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .contacts__item {
   width: 180px;
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
 }

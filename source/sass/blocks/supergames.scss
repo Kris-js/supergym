@@ -96,6 +96,11 @@
   }
 }
 
+.supergames__button:hover {
+  background-color: $color-default-white;
+  color: $color-torch-red-1;
+}
+
 .supergames__list-item {
   display: block;
   font-family: $ff-RobotoCondensed;
@@ -145,7 +150,6 @@
 }
 
 .supergames__image {
-  width: 100%;
 
   @include vp-1199 {
     min-height: 292px;
