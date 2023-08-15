@@ -1,30 +1,27 @@
 .gym {
   position: relative;
   display: flex;
-  column-gap: 65px;
+  column-gap: 85px;
   padding-left: 163px;
   padding-right: 103px;
-  padding-top: 120px;
+  padding-top: 127px;
   padding-bottom: 235px;
 
   @include vp-1199 {
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 100px;
+    padding-top: 64px;
     padding-bottom: 183px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     @include vp-767 {
-      padding-top: 40px;
+      padding-top: 22px;
       padding-bottom: 70px;
+      padding-left: 0;
+      padding-right: 0;
     }
-  }
-
-  @include vp-767 {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   p {
@@ -32,13 +29,13 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    margin-top: 14px;
+    margin-top: 8px;
     margin-bottom: 0;
 
     @include vp-1199 {
       padding-left: 88px;
       padding-right: 88px;
-      padding-bottom: 50px;
+      padding-bottom: 51px;
       text-align: center;
     }
 
@@ -46,16 +43,27 @@
       padding-left: 0;
       padding-right: 0;
       text-align: start;
+      padding-bottom: 39px;
+      max-width: 258px;
     }
   }
 }
 
 .gym__description {
+  display: block;
   font-family: $ff-RobotoCondensed;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 39px;
+
+  @include vp-1199 {
+    margin-bottom: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
 }
 
 .gym__inner {
@@ -71,7 +79,7 @@
   @include vp-767 {
     min-width: 258px;
     align-items: start;
-    padding-left: 15px;
+    padding-left: 4px;
     padding-right: 15px;
   }
 }
@@ -81,11 +89,12 @@
   font-weight: 600;
   letter-spacing: 1.44px;
   margin-top: 49px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
+    margin-bottom: 12px;
   }
 
   @include vp-767 {
@@ -96,8 +105,8 @@
 
 .gym__video {
   position: absolute;
-  bottom: 19%;
-  left: 43%;
+  bottom: 16%;
+  left: 40%;
   width: 364px;
   height: 228px;
   margin: 0 auto;
@@ -106,7 +115,7 @@
     width: 266px;
     height: 167px;
     bottom: 12%;
-    left: 31%;
+    left: 33%;
   }
 
   @include vp-767 {
@@ -133,7 +142,9 @@
 
   @include vp-1199 {
     top: 25%;
-    left: 30%;
+    left: 29%;
+    width: 73px;
+    height: 73px;
   }
 
   @include vp-767 {
@@ -143,6 +154,8 @@
 }
 
 .gym__image {
+  margin-top: -7px;
+
   @include vp-767 {
     margin-bottom: 40px;
   }

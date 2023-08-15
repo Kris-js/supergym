@@ -1,12 +1,19 @@
 .contacts {
   position: relative;
-  padding-top: 56px;
-  padding-bottom: 70px;
-  padding-left: 120px;
-  padding-right: 100px;
+  padding-top: 46px;
+  padding-bottom: 60px;
+  padding-left: 122px;
+  padding-right: 50px;
   color: $color-sapphire;
   width: 683px;
   border-top: 1px solid rgba(116, 129, 156, 1);
+
+  @include vp-1199 {
+    padding-top: 43px;
+    padding-right: 0;
+    padding-bottom: 63px;
+    padding-left: 133px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -17,7 +24,7 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 27px;
     font-size: 54px;
     font-weight: 800;
     line-height: 84px;
@@ -27,6 +34,7 @@
       font-size: 42px;
       font-weight: 600;
       letter-spacing: 1.26px;
+      margin-bottom: 16px;
     }
   }
 }
@@ -38,8 +46,13 @@
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  column-gap: 100px;
-  row-gap: 20px;
+  column-gap: 112px;
+  row-gap: 16px;
+
+  @include vp-1199 {
+    column-gap: 96px;
+    row-gap: 20px;
+  }
 
   @include vp-767 {
     flex-direction: column;
@@ -61,7 +74,13 @@
 }
 
 .contacts__item {
+  font-family: $ff-RobotoCondensed;
+  color: $color-sapphire;
   width: 180px;
+
+  @include vp-1199 {
+    width: 218px;
+  }
 
   @include vp-767 {
     width: 100%;

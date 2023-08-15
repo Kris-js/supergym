@@ -1,12 +1,17 @@
 .accordion__element {
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 19px;
   border-top: 1px solid rgba(16, 38, 84, 0.20);
+
+  @include vp-1199 {
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
 
   h3 {
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -14,6 +19,7 @@
     @include vp-1199 {
       line-height: 24px;
       max-width: 540px;
+      margin-bottom: 19px;
     }
 
     @include vp-767 {
@@ -31,6 +37,10 @@
     line-height: 25px;
     margin: 0;
 
+    @include vp-1199 {
+      padding-right: 144px;
+    }
+
     @include vp-767 {
       font-size: 16px;
       padding-right: 0;
@@ -47,7 +57,7 @@
   width: 42px;
   height: 42px;
   background: url(../img/sprite/accordion-open.svg);
-  top: 15px;
+  top: 28px;
   right: 0;
   cursor: pointer;
 

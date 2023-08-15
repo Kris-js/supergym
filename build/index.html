@@ -42,8 +42,12 @@
             <button class="hero__button button"> Купить абонемент</button>
             <div class="hero__image">
               <picture>
-                <source media="(max-width:768px)" srcset="./img/hero-tablet.png" width="324" height="390">
-                <img src="./img/hero.png" alt="" width="500" height="556">
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+                <source media="(min-width:768px)" srcset="./img/hero-tablet.png" width="324" height="390">
+                <img src="./img/hero-desktop.png" alt="" width="500" height="556">
               </picture>
             </div>
           </div>
@@ -844,8 +848,8 @@
       <div class="free__form form">
         <h2>Бесплатное занятие</h2>
         <form action="https://echo.htmlacademy.ru/" method="get" data-form-validate>
-          <div class="form__name" data-validate-type="email" ,
-          data-message-base="Поле обязательно к заполнению" , data-required>
+          <div class="form__name" data-validate-type="email" , data-message-base="Поле обязательно к заполнению" ,
+            data-required>
             <label>
               <input type="text" name="username" placeholder="Имя">
             </label>
@@ -870,12 +874,12 @@
             <p>г. Омск, ул. 60 лет Октября, 7</p>
           </li>
           <li class="contacts__item">
-            <h3>График работы:</h3>
-            <p>Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
             <h3>Телефон:</h3>
             <p>8-800-555-55-55</p>
+          </li>
+          <li class="contacts__item">
+            <h3>График работы:</h3>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
           </li>
           <li class="contacts__item">
             <h3>Email:</h3>

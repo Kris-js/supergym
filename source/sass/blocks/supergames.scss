@@ -1,10 +1,15 @@
 .supergames {
-  padding-top: 120px;
-  padding-bottom: 106px;
+  padding-top: 119px;
+  padding-bottom: 127px;
 
   @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 58px;
   }
 }
 
@@ -27,23 +32,23 @@
   column-gap: 50px;
   padding-top: 85px;
   padding-left: 78px;
-  padding-right: 98px;
+  padding-right: 79px;
   padding-bottom: 87px;
 
   @include vp-1199 {
-    grid-template-columns: auto min-content;
-    grid-template-rows: 1fr auto max-content;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content auto max-content;
     padding-top: 51px;
-    padding-right: 45px;
+    padding-right: 10px;
     padding-bottom: 51px;
-    padding-left: 45px;
-    column-gap: 30px;
+    padding-left: 46px;
+    column-gap: 39px;
   }
 
   @include vp-767 {
     flex-direction: column;
     padding-top: 50px;
-    padding-left: 44px;
+    padding-left: 46px;
     padding-right: 44px;
   }
 }
@@ -60,6 +65,7 @@
     font-size: 48px;
     line-height: 96%;
     letter-spacing: 1.44px;
+    text-align: start;
   }
 }
 
@@ -74,11 +80,16 @@
   font-weight: 400;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 
   @include vp-1199 {
     font-size: 12px;
     line-height: 150%;
+    margin-bottom: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
   }
 }
 
@@ -91,8 +102,12 @@
   cursor: pointer;
 
   @include vp-1199 {
-    padding: 13px 0;
+    padding: 11px 0;
     border: 2px solid $color-default-white;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -116,7 +131,8 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 7px;
+  margin-bottom: 0;
+  margin-top: 0;
 
   @include vp-1199 {
     font-size: 12px;
@@ -147,6 +163,13 @@
   display: grid;
   grid-template-columns: max-content 40px;
   column-gap: 7px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 150%;
+    font-weight: 400;
+    margin-top: -4px;
+  }
 }
 
 .supergames__image {

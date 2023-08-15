@@ -1,9 +1,9 @@
 .promotion {
-  padding-top: 135px;
-  padding-bottom: 120px;
+  padding-top: 156px;
+  padding-bottom: 119px;
 
   @include vp-1199 {
-    padding-top: 91px;
+    padding-top: 104px;
     padding-bottom: 100px;
   }
 
@@ -20,12 +20,12 @@
   letter-spacing: 1.62px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 54px;
 
   @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 40px;
+    margin-bottom: 54px;
   }
 
   @include vp-767 {
@@ -60,7 +60,7 @@
     grid-column: 1/3;
     grid-row: 1/2;
     grid-template-columns: 1fr auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   @include vp-767 {
@@ -74,12 +74,15 @@
   background-color: $color-torch-red-1;
   color: $color-default-white;
   font-family: $ff-RobotoCondensed;
-  padding: 42px;
+  padding-top: 43px;
+  padding-right: 43px;
+  padding-bottom: 44px;
+  padding-left: 45px;
 
   h3 {
     font-size: 28px;
     margin-top: 0;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
   }
 
   span {
@@ -94,7 +97,7 @@
     font-weight: 400;
     line-height: 140%;
     margin-top: 0;
-    margin-bottom: 198px;
+    margin-bottom: 183px;
 
     @include vp-767 {
       margin-bottom: 40px;
@@ -153,7 +156,10 @@
 
 .promotion__item {
   color: $color-resolution-blue;
-  padding: 25px;
+  padding-top: 18px;
+  padding-right: 26px;
+  padding-bottom: 24px;
+  padding-left: 28px;
   font-family: $ff-RobotoCondensed;
   border: 7px solid;
   border-image: linear-gradient(151deg, #ed0233 0, #003eb7 100%) 1;
@@ -162,6 +168,7 @@
   @include vp-1199 {
     margin-bottom: 0;
     max-width: 324px;
+    padding-right: 42px;
   }
 
   h3 {
@@ -169,7 +176,7 @@
     font-weight: 700;
     line-height: 150%;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
 
   p {
@@ -177,7 +184,11 @@
     font-weight: 400;
     line-height: 140%;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 66px;
+
+    @include vp-1199 {
+      margin-bottom: 43px;
+    }
   }
 }
 

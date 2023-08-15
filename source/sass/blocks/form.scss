@@ -1,6 +1,6 @@
 .form {
   padding-top: 56px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   padding-left: 103px;
   padding-right: 170px;
   background-color: $color-sapphire;
@@ -11,8 +11,8 @@
     width: 100%;
     padding-left: 133px;
     padding-right: 163px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 44px;
+    padding-bottom: 67px;
   }
 
   @include vp-767 {
@@ -24,11 +24,11 @@
 
   h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     font-size: 54px;
     font-weight: 800;
     line-height: 84px;
-    letter-spacing: 1.62px;
+    letter-spacing: 2.62px;
 
     @include vp-1199 {
       font-size: 42px;
@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 28px;
     font-family: $ff-RobotoCondensed;
 
     @include vp-767 {
@@ -89,8 +89,8 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   cursor: pointer;
   outline: none;
   border: 3px solid $color-default-white;

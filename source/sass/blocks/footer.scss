@@ -4,15 +4,16 @@
   display: grid;
   grid-template-columns: 100px 1fr 105px;
   column-gap: 45px;
-  padding-left: 103px;
+  padding-left: 98px;
   padding-right: 103px;
-  padding-top: 30px;
+  padding-top: 38px;
   padding-bottom: 30px;
 
   @include vp-1199 {
-    padding-left: 45px;
-    padding-right: 45px;
-    column-gap: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    column-gap: 53px;
   }
 
   @include vp-767 {
@@ -43,6 +44,11 @@
   justify-content: flex-end;
   align-items: center;
 
+
+  @include vp-1199 {
+    column-gap: 10px;
+  }
+
   @include vp-767 {
     justify-content: start;
     padding: 0;
@@ -59,7 +65,7 @@
 
 .footer__logo {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
 
   @include vp-767 {
     margin: 4px 0 20px;
