@@ -13,8 +13,8 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 79px;
+    padding-bottom: 68px;
   }
 }
 
@@ -35,6 +35,7 @@
   @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 37px;
   }
 }
 
@@ -46,6 +47,10 @@
   @include vp-1199 {
     flex-direction: column;
     row-gap: 40px;
+  }
+
+  @include vp-767 {
+    row-gap: 29px;
   }
 }
 
@@ -80,6 +85,7 @@
     width: 141px;
     font-size: 16px;
     line-height: 16px;
+    padding: 13px 0;
   }
 }
 

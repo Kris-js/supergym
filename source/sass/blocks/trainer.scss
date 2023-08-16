@@ -111,6 +111,14 @@
   color: $color-default-white;
   font-family: $ff-RobotoCondensed;
 
+  @include vp-767 {
+    padding-top: 48px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 48px;
+    width: auto;
+  }
+
   p {
     font-size: 18px;
     font-weight: 700;
