@@ -78,7 +78,7 @@
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: $color-ghost-white;
 
   @include vp-767 {
@@ -94,7 +94,7 @@
 }
 
 .faq__control.is-active {
-  background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+  background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
   color: $color-default-white;
   border: none;
 }

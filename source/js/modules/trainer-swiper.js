@@ -1,4 +1,6 @@
-const swiper = new Swiper('.trainer__swiper', {
+const Swiper = window.Swiper;
+
+const swiperTrainer = new Swiper('.trainer__swiper', {
   direction: 'horizontal',
   pagination: {
     el: '.swiper-pagination',
@@ -29,4 +31,4 @@ const swiper = new Swiper('.trainer__swiper', {
   },
 });
 
-export {swiper};
+export {swiperTrainer};

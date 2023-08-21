@@ -4,8 +4,6 @@
 
 .tabs__controls {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -28,7 +26,7 @@
   bottom: 0;
   height: 2px;
   width: 360px;
-  background-color: rgba(120, 120, 120, 0.20);
+  background-color: rgba(120, 120, 120, 0.2);
 
   @include vp-1199 {
     width: 332px;
@@ -79,8 +77,6 @@
 
 .tabs__content {
   margin-bottom: 40px;
-  -webkit-transition: height 0.3s;
-  -o-transition: height 0.3s;
   transition: height 0.3s;
 }
 
@@ -107,7 +103,6 @@
 
 @media screen and (max-width: 767px) {
   .tabs__controls {
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -177,12 +172,12 @@
 .tabs__title {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 152.344%;
+  line-height: 152.34%;
   font-weight: 700;
   font-size: 26px;
 
   @include vp-1199 {
-    line-height: 110.156%;
+    line-height: 110.16%;
   }
 
   @include vp-767 {
@@ -246,7 +241,7 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
-  opacity: 0.47999998927116394;
+  opacity: 0.48;
 }
 
 .tabs__button {
@@ -263,7 +258,7 @@
 }
 
 .tabs__button:hover {
-  background: linear-gradient(to right,#ed0233,#003eb7);
+  background: linear-gradient(to right, #ed0233, #003eb7);
   outline: none;
   border: 0;
   color: $color-default-white;

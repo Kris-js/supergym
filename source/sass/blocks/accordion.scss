@@ -1,8 +1,7 @@
 .accordion__element {
-  position: relative;
   padding-top: 32px;
   padding-bottom: 19px;
-  border-top: 1px solid rgba(16, 38, 84, 0.20);
+  border-top: 1px solid rgba(16, 38, 84, 0.2);
 
   @include vp-1199 {
     padding-top: 30px;
@@ -53,34 +52,60 @@
   }
 }
 
+.accordion__element-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .accordion__element:last-child {
-  border-bottom: 1px solid rgba(16, 38, 84, 0.20);
+  border-bottom: 1px solid rgba(16, 38, 84, 0.2);
 }
 
 .accordion__button {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+  left: 0;
+  top: 0;
   width: 42px;
   height: 42px;
-  background: url(../img/sprite/accordion-open.svg);
-  top: 28px;
-  right: 0;
   cursor: pointer;
+  box-shadow: 0 0 0 1px #1c3374 inset;
 
   @include vp-767 {
     width: 32px;
     height: 32px;
-    top: 25px;
   }
 }
 
-.accordion__button:hover {
-  background: url(../img/sprite/accordion-open-hover.svg);
+.accordion__button::after,
+.accordion__button::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: $color-resolution-blue;
 }
 
-.accordion__element.is-active .accordion__button {
-  background: url(../img/sprite/accordion-close.svg);
+.accordion__button::after {
+  width: 1px;
+  height: 20px;
 }
 
-.accordion__button:disabled {
-  background: url(../img/sprite/accordion-disabled.svg);
+.accordion__button:hover:not(.focus-visible)::after,
+.accordion__button:hover:not(.focus-visible)::before {
+  background-color: $color-default-white;
+}
+
+.accordion__button.is-active:hover:not(.focus-visible)::after {
+  background-color: transparent;
+}
+
+.accordion__button:hover:not(.focus-visible) {
+  background-color: $color-resolution-blue;
 }

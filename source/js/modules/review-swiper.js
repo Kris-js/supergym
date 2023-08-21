@@ -1,3 +1,5 @@
+const Swiper = window.Swiper;
+
 const swipers = new Swiper('.review__swiper', {
   direction: 'horizontal',
   pagination: {

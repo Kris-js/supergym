@@ -2,11 +2,13 @@
   display: grid;
   grid-template-columns: 133px 263px 1fr;
   padding-bottom: 51px;
+  padding-top: 25px;
 
   @include vp-1199 {
     grid-template-columns: 113px 183px 1fr;
     column-gap: 29px;
     padding-bottom: 82px;
+    padding-top: 0;
   }
 
   @include vp-767 {
@@ -58,7 +60,6 @@
   grid-column: 2/3;
   height: 180px;
   text-align: right;
-  line-height: 94px;
   line-height: normal;
 
   @include vp-1199 {
@@ -114,11 +115,13 @@
 }
 
 .hero__button {
+  display: block;
+  text-align: center;
   grid-column: 2/3;
-  height: 57px;
-  padding-top: 22px;
-  outline: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
   align-self: center;
+  border: 4px solid $color-default-white;
 
   @include vp-1199 {
     margin-top: -60px;
@@ -148,5 +151,4 @@
   background-color: transparent;
   color: opacity(0.5);
   border: 4px solid rgba(255, 255, 255, 0.5);
-  ;
 }

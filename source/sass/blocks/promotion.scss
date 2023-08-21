@@ -41,7 +41,6 @@
   column-gap: 40px;
 
   @include vp-1199 {
-    grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     grid-template-rows: 1fr auto;
     grid-row: 30px;
