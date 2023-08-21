@@ -2106,24 +2106,21 @@ button.swiper-pagination-bullet {
     padding-top: 13px;
   }
 }
-.header svg {
+.header img {
   width: 122px;
   height: 44px;
 }
 @media (max-width: 1199px) {
-  .header svg {
+  .header img {
     width: 82px;
     height: 17px;
   }
 }
 @media (max-width: 767px) {
-  .header svg {
+  .header img {
     width: 69px;
     height: 24px;
   }
-}
-.header img {
-  width: 100%;
 }
 .header p {
   font-size: 26px;
