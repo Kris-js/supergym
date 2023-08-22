@@ -4573,6 +4573,10 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media (max-width: 1199px) {
   .free {

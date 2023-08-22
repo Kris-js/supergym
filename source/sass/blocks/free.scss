@@ -1,5 +1,6 @@
 .free {
   display: flex;
+  flex-direction: row;
 
   @include vp-1199 {
     flex-direction: column;
